@@ -16,6 +16,11 @@ const slotValues = {
   slot9: 0,
 };
 window.onload = function () {
+  let value = prompt("Enter name of player");
+  while (value == ""){
+      value = prompt("Try again!");
+  }
+  document.getElementById('name').innerHTML = value;
   renderScore();
   spin('slot1');
   spin('slot2');
