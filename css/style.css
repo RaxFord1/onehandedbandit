@@ -61,7 +61,7 @@
 
 #spinBtn {   
     background: #ba3551; 
-    width: 10vw;
+    width: 20vw;
     height: 5vh;
     border-radius: 10px;
     outline: none;
@@ -99,6 +99,8 @@
 }
 .icon {
     width: 33%;
+    min-height: 50px; 
+    min-width: 50px;
 }
 
 .winner-icon {
@@ -126,8 +128,6 @@ span {
 }
 
 .diamond {
-    min-height: 50px;
-    min-width: 50px;
     background: url(../img/diamond.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -135,17 +135,13 @@ span {
 }
 
  .seven {
-    min-height: 50px;
-    min-width: 50px;
-     background: url(../img/seven.png);
-     background-repeat: no-repeat;
+    background: url(../img/seven.png);
+    background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center center;
  }
 
 .horseshoe {
-    min-height: 50px;
-    min-width: 50px;
     background: url(../img/horseshoe.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -153,8 +149,6 @@ span {
 }
 
 .bell {
-    min-height: 50px;
-    min-width: 50px;
     background: url(../img/bell.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -162,8 +156,6 @@ span {
 }
 
 .lemon {
-    min-height: 50px;
-    min-width: 50px;
     background: url(../img/lemon.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -171,8 +163,6 @@ span {
 }
 
 .cherry {
-    min-height: 50px;
-    min-width: 50px;
     background: url(../img/cherry.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -185,3 +175,45 @@ span {
     opacity: 0.5;
     background-color: grey;
 }
+@media screen and (max-width: 800px) {
+    .slots {
+      width: 500px;
+      height: 500px;
+    }
+  } 
+@media screen and (max-width: 600px) {
+    .slots {
+        width: 400px;
+        height: 400px;
+    }
+} 
+@media screen and (max-width: 500px) {
+    .slots {
+        width: 350px;
+        height: 350px;
+    }
+    .icon {
+        min-width: 25px;
+        min-height: 25px;
+    }
+} 
+@media screen and (max-width: 400px) {
+    .slots {
+        width: 300px;
+        height: 300px;
+    }
+    .icon {
+        min-width: 25px;
+        min-height: 25px;
+    }
+} 
+@media screen and (max-width: 300px) {
+    .slots {
+        width: 200px;
+        height: 200px;
+    }
+    .icon {
+        min-width: 25px;
+        min-height: 25px;
+    }
+} 
